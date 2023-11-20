@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* Init av variabler */
+/* Boolean för round-corner */
+/* Functions */
+body {
+  background: rgb(114, 220, 220);
+}
+
+p {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.myParagraf {
+  font-size: 24px;
+  color: rgb(44, 65, 109);
+}
+
+li {
+  border: dotted 3px;
+  margin: 6px;
+}
+
+ol, ul {
+  border: solid 2px;
+  margin: 6px;
+}
+
+/*
+ol {
+    border: solid 1px;
+    margin: 6px;
+}
+
+ul {
+    border: solid 1px;
+    margin: 6px;
+}
+*//*# sourceMappingURL=myCss.css.map */

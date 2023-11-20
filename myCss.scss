@@ -1,0 +1,56 @@
+/* Init av variabler */
+$bg_color: rgb(114, 220, 220);
+$sec_color: rgb(44, 65, 109);
+$size: 24px;
+
+/* Boolean för round-corner */
+$round: true;
+$bigRound: false;
+
+/* Functions */
+@mixin smallBorder($style, $width) {
+    border: $style $width;
+    margin: 6px;
+}
+
+body {
+    background: $bg_color;
+}
+
+p {
+    border-style: solid;
+    border-width: 3px;
+    @if $round {
+        @if $bigRound {
+            border-radius: 50px;
+            padding: 15px;
+        } @else {
+            border-radius: 20px;
+            padding: 5px;
+        }
+    }
+}
+
+.myParagraf {
+    font-size: $size;
+    color: $sec_color;
+}
+
+li {
+    @include smallBorder(dotted, 3px)
+}
+
+ol, ul {
+    @include smallBorder(solid, 2px)
+}
+/*
+ol {
+    border: solid 1px;
+    margin: 6px;
+}
+
+ul {
+    border: solid 1px;
+    margin: 6px;
+}
+*/
